@@ -1,2 +1,2 @@
-$request.url = $request.url.replace('/\?keyword=*/', '')
+$request.url = $request.url.replace(/\?keyword=*/g, '')
 $done({$request})
